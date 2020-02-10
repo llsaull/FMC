@@ -1,0 +1,44 @@
+---
+title: "Lista01"
+author: "Seu Nome"
+date: "2/10/2020"
+output: pdf_document
+---
+
+Exemplo de solução com RMarkdown.
+
+# Execício 01
+
+Esse é um exemplo de solução da lista. 
+
+Você pode adicionar textos e equações matemáticas em forma "display":
+\[
+     \frac{d}{dx} f(x) = 2x + C,
+\]
+e também simbolos matemáticos dentro do texto $\sigma$.
+
+Códigos em python podem ser inseridos em clicando em insert $\rightarrow$ python, como ilustado abaixo:
+
+
+```{python}
+import sympy as sp
+
+# Simbolos
+x,a,b = sp.symbols("x a b")
+
+# Derivadas
+print(sp.diff(x**2,x))
+
+# Integrais indefinidas (anti-derivadas)
+print(sp.integrate(1/x,x))
+
+#Integrais definidas
+print(sp.integrate(1/x,(x,a,b)))
+```
+
+Aperte Ctrl+Enter rodar o seu código. 
+
+Na hora de enviar a sua solução, gere o PDF (clique em "knit"). 
+Somente serão aceitas as soluções em PDF.
+
+**Soluções em outros formatos não serão aceitas.**
